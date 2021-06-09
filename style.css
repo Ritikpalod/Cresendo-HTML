@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #e9e6e6;
+}
+/*global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+button {
+  margin: 20px;
+  height: 38px;
+  width: 100px;
+  color: white;
+  background: darkblue;
+  border-style: solid;
+  border-color: white;
+  border-color: white;
+}
+
+/* Header */
+header {
+  text-decoration: none;
+  background: #fff;
+  padding-left: auto;
+  margin: auto;
+  overflow: hidden;
+  padding-top: auto;
+  min-height: 20px;
+  border-bottom: rgb(36, 18, 112) 8px solid;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 5px 40px 0 0;
+  margin-right: 30px;
+}
+header .logo h1 {
+  margin: 0;
+  float: left;
+  padding: 0;
+  color: rgb(36, 18, 112);
+  cursor: pointer;
+}
+header .highlight {
+  color: rgb(6, 152, 236);
+}
+header .menu {
+  margin-top: 4px;
+  display: flex;
+  list-style: none; /*check this for error*/
+}
+header .menu li a {
+  display: inline-block;
+}
+
+header .openMenu {
+  font-size: 2rem;
+  margin: 0 0 0;
+  display: none;
+  cursor: pointer;
+}
+header .menu .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+/*Showcase*/
+.showcase {
+  min-height: 300px;
+  background: url("adventuring-mountains.jpg") no-repeat;
+  color: black;
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 1.2;
+}
+
+section .container h2 {
+  margin: 60px 0 5px 30px;
+  color: black;
+}
+section .container h3 {
+  margin: 20px 0 5px 30px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/*Boxes*/
+
+#boxes {
+  margin-top: 5px;
+}
+
+#boxes h1,
+h4 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+#boxes .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*showcase*/
+
+.showcase-1 {
+  min-height: 300px;
+  background: url("alex-fxrwJGMCz_g-unsplash.jpg") no-repeat;
+
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 1;
+}
+
+.showcase-1 .container h1,
+.h3color {
+  color: white;
+}
+.showcase-1 .container h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+/*Boxes-1*/
+
+#boxes-1 {
+  margin-top: 5px;
+}
+
+#boxes-1 h1,
+h4 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+#boxes-1 .box {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+
+#boxes-1 .box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*footer*/
+
+#footer {
+  padding: 15px;
+  color: white;
+  background-color: gray;
+}
+
+#footer .container .footer-left-col {
+  margin-top: 15px;
+  float: left;
+}
+
+#footer .container .footer-right-col {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    float: center;
+    text-align: center;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  #boxes {
+    float: center;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .container {
+  }
+  header .menu {
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: top 1s ease;
+  }
+  header .menu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header .openMenu {
+    display: block;
+    float: right;
+  }
+}
